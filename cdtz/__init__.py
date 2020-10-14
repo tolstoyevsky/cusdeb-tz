@@ -15,6 +15,7 @@
 """Bread and butter of the service. """
 
 import os
+import time
 
 from cdtz import config
 
@@ -48,3 +49,14 @@ def list_time_zones():
     time_zones.sort()
 
     return time_zones
+
+
+def set_time_zone(time_zone):
+    """Sets the current time zone. """
+
+    time_zones = list_time_zones()
+    if time_zone not in time_zones:
+        raise ValueError(f'Incorrect timezone setting: {time_zone}')
+
+    os.environ['TZ'] = time_zone
+    time.tzset()
