@@ -1,4 +1,5 @@
 # Copyright (C) 2020 Vladislav Yarovoy. All Rights Reserved.
+# Copyright (C) 2020 Denis Gavrilyuk. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
